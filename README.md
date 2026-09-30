@@ -19,11 +19,11 @@ npm run dev
 
 Note: Folder name ke jahaga ager ap . laga do to ose folder ma he next js install ho jaha ge lakin os folder ma koi or faile ya folder phala sa na ho.
 
-JSX: HTML ka jasa dikh ta ha lakin ya HTML ho ta nahi ha.
+JSX: HTML ka jasa dikh ta ha lakin ya HTML ho ta nahi ha. Curly Brakets ka under he JS likh sakta hain. 
 
 Nextjs JSX formate ma he likha jata ha.
 
-JSX Example:
+<!-- JSX Example: -->
 
 import React from "react";
 
@@ -36,14 +36,17 @@ export default Buttons;
 componets: Wo Code jo bar bar project ma easily use kar sagen.
 Note:
 \*\*) har component file ka First Latter BIG ho ga. & File ke extention JXS ho ge Small ma.
-Name Example: Button.jsx
+
+<!-- Name Example: Button.jsx -->
 
 \*\*) Ager TYPESCRIPT use kar raha ho to file ka extention tsx ho ga.
-Name Example: Button.tsx
+
+<!-- Name Example: Button.tsx -->
 
 **) Export hota ha.
 **) Component Import kar ta time @ ka zarya sa Root sa path define kar ta hain.
-Example:
+
+<!-- Example: -->
 
 import Buttons from "@/components/Buttons";
 
@@ -57,3 +60,39 @@ return (
 
 1. Static
 2. Dynamic
+
+\*\*) Static: jis ma Data ka bihave par kuch bhi na ho. or sara data ma same work kara.
+
+import React from "react";
+
+const Buttons = () => {
+return <div>Buttons</div>;
+};
+
+export default Buttons;
+
+\*\*) Dynamic: Data ka bihave par kuch React kara ya change ho.
+Note: 
+**) Typescript ma har prop ke type define kar ne hote ha jo ka object ke form ma ho te ha. or exported function ka under Circle brakets ma object ka under props likhan ga. phir type ka name object ka aga colon laga kar likh daen ga.
+**) Props ko use kar na ka liya Curly Brakets use karen ga. 
+
+<!-- Example: -->
+
+import React from "react";
+type ButtonProps = {
+title: string;
+name: string;
+description: string;
+};
+const Buttons = ({ title, name, description }: ButtonProps) => {
+<></>;
+};
+
+export default Buttons;
+
+
+Routing: app folder ka under 1 folder create karoo. os ma page.tsx / page.jsx name ke file bana ho. 
+
+<!-- Example: -->
+app/folder/page.tsx
+
