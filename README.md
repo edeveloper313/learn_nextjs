@@ -96,3 +96,12 @@ Routing: app folder ka under 1 folder create karoo. os ma page.tsx / page.jsx na
 <!-- Example: -->
 app/folder/page.tsx
 
+
+anchor tag sa page realod hota ha joa ka ham ko nahi cahiya. is ka liya Ham link ka use kar ta hain, jo ka next.js waloon ka apna khood ka componet ha. 
+
+
+
+Client Side Rendaring vs Server Side Rendaring
+
+1. Client Side Rendaring: Jis ka sath user intrect kara. (By Defult next.js use kar ta ha.)
+2. Server Side Rendaring: Jis ka sath user intrect na kara. 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +24,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        {/* Remix Icon's CDN */}
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        <main className="container mx-auto min-h-dvh">{children}</main>
+      </body>
     </html>
   );
 }
