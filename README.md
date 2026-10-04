@@ -105,3 +105,10 @@ Client Side Rendaring vs Server Side Rendaring
 
 1. Client Side Rendaring: Jis ka sath user intrect kara. (By Defult next.js use kar ta ha.)
 2. Server Side Rendaring: Jis ka sath user intrect na kara. 
+
+Note: kabhi bhi complete page ya bara component ko clinet component nahi bana ta balka jitna code ko client component bana na ke zaroorat ho te ha otna ko he client component bana ta hain. 
+
+
+<!-- API -->
+
+api jab bhi call hote ha to wo aik async call hote ha. 

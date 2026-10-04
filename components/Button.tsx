@@ -1,0 +1,18 @@
+"use client";
+const Button = () => {
+  return (
+    <>
+      <button
+        onClick={(): void => {
+          console.log("Hello World");
+        }}
+        className="inline-flex  bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 justify-between"
+      >
+        Click Me
+        <i className="ri-arrow-right-fill w-4 h-4 "></i>
+      </button>
+    </>
+  );
+};
+
+export default Button;

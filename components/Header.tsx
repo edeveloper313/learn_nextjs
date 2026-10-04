@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Button from "./Button";
 
 const Header = () => {
   return (
@@ -16,14 +17,14 @@ const Header = () => {
             <Link href="/about" className="mr-5 hover:text-gray-900">
               {"About"}
             </Link>
+            <Link href="/users" className="mr-5 hover:text-gray-900">
+              {"Users"}
+            </Link>
             <Link href="/contact" className="mr-5 hover:text-gray-900">
               {"Contact"}
             </Link>
           </nav>
-          <button className="inline-flex  bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 justify-between">
-            Click Me
-            <i className="ri-arrow-right-fill w-4 h-4 "></i>
-          </button>
+          <Button />
         </div>
       </header>
     </>
